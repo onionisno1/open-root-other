@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      #INIT_LOADING {position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;text-align:center;background:#fff;opacity:1;
+        color:#000;transition:opacity .3s;-webkit-transition:opacity .3s;-moz-transition:opacity .3s;-o-transition:opacity .3s;font-size:16px}
+      #LOAD_DOT {position:absolute;left:50%;top:50%;
+        width: 16px;height: 16px;border-radius:8px;margin-top:-8px;margin-left:-8px;
+        background-color: #9880ff;
+        animation: dot-flashing 1s infinite linear alternate;animation-delay: .5s;
+      }
+      #LOAD_DOT::before, #LOAD_DOT::after {
+        content: '';display: inline-block;position: absolute;top: 0;
+      }
+      #LOAD_DOT::before {
+        left: -24px;width: 16px;height: 16px;border-radius: 8px;
+        background-color: #9880ff;
+        animation: dot-flashing 1s infinite alternate;animation-delay: 0s;
+      }
+      #LOAD_DOT::after {
+        left: 24px;width: 16px;height: 16px;border-radius: 8px;
+        background-color: #9880ff;
+        animation: dot-flashing 1s infinite alternate;animation-delay: 1s;
+      }
+      @keyframes dot-flashing {0% {background-color: #9880ff} 50%, 100% {background-color: #ebe6ff}}
+    </style>
+    <script>
+      var INIT_OK_FLAG = false
+      var PARENT_OBJ = null
+      var PARENT_PARAM = null
+      var PARAM_CALLBACKS = []
+      function EMIT_INIT_OK() {
+        if (!INIT_OK_FLAG) {
+          INIT_OK_FLAG = true
+          document.getElementById('INIT_LOADING').style.opacity = '0'
+          setTimeout("document.body.removeChild(document.getElementById('INIT_LOADING'))", 500)
+        }
+      }
+      function SET_PARENT_OBJ(obj) {
+        PARENT_OBJ = obj
+      }
+      function SET_PARENT_PARAM(param) {
+        PARENT_PARAM = param
+        for (var i = 0; i < PARAM_CALLBACKS.length; i++) {
+          var cb = PARAM_CALLBACKS[i]
+          cb(param)
+        }
+      }
+      function GET_PARENT_SYNC(callback) {
+        if (PARENT_PARAM !== null) {
+          callback(PARENT_PARAM)
+        } else {
+          PARAM_CALLBACKS.push(callback)
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>JavaScript脚本加载失败</strong>
+    </noscript>
+    <div id="INIT_LOADING">
+      <div id="LOAD_DOT"></div>
+    </div>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

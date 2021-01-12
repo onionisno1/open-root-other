@@ -1,0 +1,432 @@
+body {
+  color: #333;
+  background: #fff;
+}
+.g-ctx {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+.g-sp-ctx {
+  padding-top: 16px;
+}
+.g-p-ctx {
+  padding-top: 24px;
+}
+.g-entry-bg {
+  background: linear-gradient(to bottom, #4641af, #7d25a0);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.g-entry-bgi {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.g-login-box {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.g-login-name {
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 28px;
+}
+.g-entry-logo {
+  width: 86px;
+  margin: 0 auto;
+}
+.g-entry-logo img {
+  width: 100%;
+  height: auto;
+}
+.g-f {
+  position: relative;
+}
+.g-f-item {
+  position: relative;
+  padding-bottom: 20px;
+}
+.el-form-item .g-f-item {
+  padding-bottom: 0;
+}
+.g-f-label {
+  color: #bcbad4;
+  line-height: 20px;
+}
+.g-f-value {
+  line-height: 36px;
+  border-bottom: 1px solid #bcbad4;
+}
+.el-form-item .g-btn {
+  bottom: 4px !important;
+}
+.g-error {
+  color: #f00;
+}
+
+.g-tabs {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.g-tab {
+  display: inline-block;
+  padding-right: 30px;
+  color: #8583b6;
+  cursor: pointer;
+}
+.g-tab-t {
+  border-bottom: 3px solid transparent;
+  line-height: 32px;
+  display: inline-block;
+}
+.g-tab:hover .g-tab-t, .g-tab-active .g-tab-t {
+  color: #393789;
+  border-bottom: 3px solid #393789;
+}
+.g-tab-active {
+  font-weight: 700;
+}
+
+.g-step-desc {
+  padding-bottom: 10px;
+  color: #393789;
+}
+.g-step-btns {
+  text-align: right;
+  padding: 10px 0 40px;
+}
+
+.g-footer {
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  height: 59px;
+  color: #333;
+  border-top: 1px solid #d8d8d8;
+}
+.g-footer-item {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 9px;
+  width: 24.8%;
+}
+.g-footer-selected {
+  color: #5856ff;
+}
+.g-footer-icon {
+  line-height: 24px;
+  font-size: 18px;
+}
+.g-footer-name {
+  font-size: 12px;
+}
+.g-footer-focus {
+  position: absolute;
+  z-index: 1;
+  width: 8px;
+  height: 8px;
+  top: 50%;
+  right: 50%;
+  background: #f00;
+  border-radius: 100%;
+  margin-top: -14px;
+  margin-right: -14px;
+}
+
+// For login pages.
+.g-lf-label {
+  color: #aea0f1;
+  line-height: 20px;
+}
+.g-login-check .el-checkbox__label {
+  color: #aea0f1;
+}
+.g-login-check .el-checkbox__input.is-checked + .el-checkbox__label{
+  color: #fff;
+}
+.g-ltab {
+  display: inline-block;
+  width: 50%;
+  padding-right: 0;
+  text-align: center;
+  color: #aea0f1;
+  cursor: pointer;
+}
+.g-ltab-t {
+  border-bottom: 1px solid transparent;
+  line-height: 32px;
+  width: 100%;
+  display: inline-block;
+}
+.g-ltab:hover .g-ltab-t, .g-tab-active .g-ltab-t {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.g-tab-active .g-ltab-t {
+  font-weight: 400;
+}
+.g-lerror {
+  color: #ff7878;
+  padding-bottom: 12px;
+}
+
+// For footer tab.
+.g-ft-item {
+  height: 46px;
+  line-height: 42px;
+  text-align: center;
+  float: left;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-bottom: 6px solid transparent;
+}
+.g-ft-item-selected {
+  color: #4e44ba;
+  border-bottom: 6px solid #4e44ba;
+}
+.g-ft-sp2 {
+  width: 50%;
+}
+
+// For system page.
+.g-sp-header {
+  height: 80px;
+  padding: 16px;
+  position: relative;
+}
+.g-sp-card {
+  border-top: 1px solid #ddd;
+  position: relative;
+  padding-bottom: 24px;
+}
+.g-sp-name {
+  font-size: 26px;
+  line-height: 46px;
+  font-weight: bold;
+}
+.g-sp-desc {
+  color: #a8a7c1;
+}
+.g-sp-text-a {
+  color: #615cbd;
+  text-decoration: underline;
+}
+.g-sp-more {
+  position: absolute;
+  z-index: 1;
+  right: 16px;
+  bottom: 16px;
+}
+.g-sp-tbtn {
+  position: absolute;
+  z-index: 1;
+  top: 16px;
+  right: 16px;
+}
+.g-sp-card-n {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 20px 0 10px;
+}
+
+.g-sel-h {
+  padding: 16px;
+}
+.g-sel-h-a {
+  padding-right: 102px;
+}
+.g-sel-h-a1 {
+  padding-right: 52px;
+}
+.g-sel-h-btn {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 100%;
+  border: 1px solid #ddd;
+  margin-left: 10px;
+}
+.g-sel-ctx {
+  overflow: auto;
+}
+
+.g-sel-tree {
+  padding-bottom: 20px;
+}
+.g-tree-icon {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  padding-right: 4px;
+}
+
+.g-pro-list {
+  border-top: 1px solid #ddd;
+  padding-bottom: 20px;
+  overflow: auto;
+}
+.g-pro-item {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding: 0 16px;
+  height: 60px;
+}
+.g-pro-icon {
+  float: left;
+  margin-top: 7px;
+  margin-right: 12px;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  color: #615cbd;
+  border-radius: 100%;
+  font-size: 34px;
+  text-align: center;
+}
+.g-pro-name {
+  font-weight: bold;
+  font-size: 15px;
+  padding-top: 10px;
+}
+.g-pro-desc {
+  color: #c5c3de;
+}
+.g-pro-arr {
+  position: absolute;
+  z-index: 1;
+  right: 16px;
+  top: 0;
+  line-height: 60px;
+}
+
+.g-step-error {
+  color: #f00;
+  padding-bottom: 10px;
+}
+
+.g-th-m-dots {
+  padding: 18px 12px 0 0;
+  line-height: 30px;
+}
+.g-th-m-dot {
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin-top: 14px;
+  border: 1px solid #3a3e6b;
+  border-radius: 100%;
+}
+.g-th-dot-red {
+  background: linear-gradient(to bottom right, #f39389, #c5200f);
+}
+.g-th-dot-orange {
+  background: linear-gradient(to bottom right, #f3dbae, #c57d03);
+}
+.g-th-dot-green {
+  background: linear-gradient(to bottom right, #bdf3c3, #18c529);
+}
+.g-th-m-btns {
+  line-height: 28px;
+  padding: 12px 6px 12px 16px;
+  white-space: nowrap;
+  overflow: auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+.g-th-m-icon {
+  color: #c752fb;
+}
+.g-th-m-text {
+  padding-left: 4px;
+}
+.g-th-m-btn {
+  display: inline-block;
+  height: 28px;
+  text-align: center;
+  border: 1px solid #e2e1ff;
+  background: #fff;
+  border-radius: 28px;
+  padding: 0 14px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.g-th-m-cir-btn {
+  width: 28px;
+  font-size: 18px;
+  padding: 0;
+}
+.g-th-m-btn-selected {
+  border: 1px solid #4641af;
+  background: linear-gradient(to right, #c752fb, #4641af);
+  color: #fff;
+}
+.g-th-m-btn-selected .g-th-m-icon {
+  color: #fff;
+}
+.g-th-m-btn:hover {
+  border: 1px solid #c752fb;
+}
+
+.g-popup-header {
+  height: 54px;
+  line-height: 54px;
+  background: #615cbd;
+  color: #fff;
+}
+.g-popup-box {
+  position: relative;
+  box-sizing: border-box;
+  padding: 54px 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+.g-popup-no-header-b {
+  padding: 0;
+}
+.g-popup-no-header {
+  display: none;
+}
+.g-popup-title {
+  padding: 0 20px;
+  text-align: center;
+  font-size: 16px;
+}
+.g-popup-btns {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 24px;
+}
+.g-popup-btns-l {
+  right: auto;
+  left: 10px;
+}
+.g-popup-btn {
+  display: inline-block;
+  width: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+.g-popup-body {
+  background: #fff;
+  height: 100%;
+  overflow: auto;
+}
+

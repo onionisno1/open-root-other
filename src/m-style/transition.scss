@@ -1,0 +1,41 @@
+/** Fade transition */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s ease;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+  overflow: hidden;
+}
+
+/** Popup transition */
+.popup-enter-active, .popup-leave-active {
+  transition: opacity .3s ease;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+.popup-enter, .popup-leave-to {
+  opacity: 0;
+  overflow: hidden;
+}
+.popup-enter-active .t-inner, .popup-leave-active .t-inner {
+  transition: transform .3s ease;
+}
+.popup-enter .t-inner, .popup-leave-to .t-inner {
+  transform: translateY(20%);
+}
+.popup-enter-active .t-content, .popup-leave-active .t-content {
+  overflow: hidden;
+}
+
+/** Lft transition */
+.lft-enter-active, .lft-leave-active {
+  transition: transform .5s ease;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+.lft-enter, .lft-leave-to {
+  transform: translateX(-20%);
+  overflow: hidden;
+}

@@ -1,0 +1,119 @@
+.g-f-input .el-input__inner {
+  background: none;
+  color: #333;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding: 0 0 4px;
+  height: 34px;
+  line-height: 30px;
+  border-bottom: 1px solid #bcbad4;
+}
+.g-f-input .el-input__inner:focus {
+  border-bottom: 1px solid #333;
+}
+.g-r-input .el-input__inner {
+  border-radius: 40px;
+}
+.g-f-input .el-select {
+  width: 100%;
+}
+.g-btn .el-button {
+  color: #513fae;
+  width: 100%;
+  border-radius: 40px;
+}
+.g-btn-f .el-button{
+  width: 100%;
+  border-radius: 40px;
+  background: linear-gradient(90deg,#c652fb,#4e44ba);
+  border-color: #5a46c1;
+}
+.g-select .el-select {
+  width: 100%;
+}
+.g-select .el-input__inner {
+  border-radius: 40px;
+}
+
+.img-upload .el-upload {
+  display: block;
+  width: 280px;
+  margin: 20px auto;
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.elo-upload-img-card {
+  width: 280px;
+}
+.elo-upload-no-img {
+  font-size: 28px;
+  width: 178px;
+  color: #8c939d;
+  text-align: center;
+}
+.g-el-no-header thead {
+  display: none;
+}
+
+// For guide.
+.g-step-btns .el-button {
+  width: auto;
+}
+
+.g-sel-tree .el-tree-node__content {
+  height: 40px;
+  color: #393789;
+  background-color: #e9e8fa;
+  position: relative;
+}
+.g-sel-tree-no-bg .el-tree-node__content {
+  background: none;
+}
+/* .g-sel-tree .el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+  color: #fff;
+  background: linear-gradient(to right, #a7a3f0, #c754fb);
+}
+.g-sel-tree .el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background: #ffba00;
+  right: 0;
+  top: 0;
+} */
+
+// For login pages.
+.g-lf-input .el-input__inner {
+  color: #fff;
+  border-bottom: 1px solid #aea0f1;
+}
+.g-lf-input .el-input__inner:focus {
+  border-bottom: 1px solid #fff;
+}
+.g-lbtn-f .el-button {
+  background: #fff;
+  color: #513fae;
+  border: none;
+}
+.el-tabs__header {
+  margin: 0;
+}
+.el-button.is-disabled {
+  color: #c0c4cc;
+}
+
+.el-collapse-item__header {
+  padding: 0 15px;
+  line-height: 16px;
+  font-weight: bold;
+}
+.el-collapse-item__content {
+  padding: 0 15px;
+}

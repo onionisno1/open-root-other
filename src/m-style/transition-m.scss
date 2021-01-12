@@ -1,0 +1,19 @@
+/** Popup transition */
+.popup-m-enter-active, .popup-m-leave-active {
+  transition: opacity .3s ease;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+.popup-m-enter, .popup-m-leave-to {
+  opacity: 0;
+  overflow: hidden;
+}
+.popup-m-enter-active .t-inner, .popup-m-leave-active .t-inner {
+  transition: transform .3s ease;
+}
+.popup-m-enter .t-inner, .popup-m-leave-to .t-inner {
+  transform: translateX(20%);
+}
+.popup-m-enter-active .t-content, .popup-m-leave-active .t-content {
+  overflow: hidden;
+}
