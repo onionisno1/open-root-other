@@ -53,7 +53,7 @@
     word-break: break-all;
   }
   .c-img{
-    width: 60%;
+    width: 80%;
     /* height: 50%; */
     margin-top: 10px;
     margin-left: auto;
