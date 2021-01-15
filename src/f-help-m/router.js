@@ -24,7 +24,7 @@ export default new Router ({
       component: instruction
     },
     {
-      path: '/detailInfo/:id',
+      path: '/detailInfo/:parengId/:childId',
       name: 'detailInfo',
       component: detailInfo
     }

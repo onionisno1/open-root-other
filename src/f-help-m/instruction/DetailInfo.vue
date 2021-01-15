@@ -23,12 +23,19 @@
       }
     },
     created(){
-      let id = this.$route.params.id
+      let parengId = this.$route.params.parengId
+      let childId = this.$route.params.childId
       let info = instruction.getInfo()
       for(let i = 0; i < info.length; i++){
-        if(info[i].id === id){
-          this.title = info[i].title
-          this.content = info[i].content
+        if(info[i].id === parengId){
+          let children = info[i].children
+          for(let j = 0; j < children.length; j++){
+            if(children[j].id === childId){
+              this.title = children[j].title
+              this.content = children[j].content
+              break
+            }
+          }
           break
         }
       }
