@@ -2,31 +2,13 @@
   <div class="instruction-list">
     <el-collapse v-model="act" accordion>
       <el-collapse-item v-for="item in info" :key="item.id" :title="item.title" :name="item.title">
-        <div v-for="childInfo in item.children" :key="childInfo.id" class="c-info-title">
+        <div v-for="childInfo in item.children" :key="childInfo.id" class="c-info-title" :style="{'padding-left': childInfo.isIndent ? '20px' : '0px'}">
           <router-link :to="{path: '/detailInfo/' + item.id + '/' + childInfo.id}">
             {{childInfo.title}}
           </router-link>
         </div>
       </el-collapse-item>
     </el-collapse>
-    <!-- <div v-for="(item) in info" :key="item.id" class="instruction-list-item">
-      <div class="c-info-title">
-        <div v-if="item.children && item.children.length > 0">
-          <el-collapse v-model="item.id" accordion>
-            <el-collapse-item :title="item.title" :name="item.id">
-              <div v-for="childInfo in item.children" :key="childInfo.id">
-                {{childInfo.title}}
-              </div>
-            </el-collapse-item>
-          </el-collapse>
-        </div>
-        <div v-else>
-          <router-link :to="{path: '/detailInfo/' + item.id + '/null'}">
-            {{item.title}}
-          </router-link>
-        </div>
-      </div> -->
-    <!-- </div> -->
     <router-view></router-view>
   </div>
 </template>

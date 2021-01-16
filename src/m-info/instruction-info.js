@@ -126,7 +126,8 @@ const info = [{
       ]
     },{
       id: '1',
-      title: '新建一个空白的物',
+      title: '  新建一个空白的物',
+      isIndent: true,
       content: [
         {
           text: '1、为设备选择合适的硬件模型后，点击“下一步”。',
@@ -145,6 +146,7 @@ const info = [{
     },{
       id: '2',
       title: '从现有的物中复制',
+      isIndent: true,
       content: [
         {
           text: '1、选择好要复制的物后，点击“下一步”。',
@@ -155,6 +157,55 @@ const info = [{
         },{
           text: '3、选择物要添加到的节点，点击“完成”。',
           imgUrl: ['/preset/other/use-instruction/blankDevice_04.jpg']
+        }
+      ]
+    }
+  ]
+},{
+  id: '6',
+  title: '用户管理',
+  children: [{
+      id: '0',
+      title: '进入用户管理',
+      content: [
+        {
+          text: '1、进入系统后，点击“用户管理”图标，进入用户管理选择界面。',
+          imgUrl: ['/preset/other/use-instruction/userManage_01.jpg']
+        }
+      ]
+    },{
+      id: '1',
+      title: '添加用户',
+      isIndent: true,
+      content: [
+        {
+          text: '1、点击“新增用户”开始添加用户。',
+          imgUrl: ['/preset/other/use-instruction/userManage_02.jpg']
+        },{
+          text: '2、按照要求填写必要的信息，注意登录名不得事中文和手机号。',
+          imgUrl: ['/preset/other/use-instruction/userManage_03.jpg']
+        }
+      ]
+    },{
+      id: '2',
+      title: '分享系统',
+      isIndent: true,
+      content: [
+        {
+          text: '1、在用户列表中，点击用户。',
+          imgUrl: ['/preset/other/use-instruction/userManage_04.jpg']
+        },{
+          text: '2、点击“分享”按钮',
+          imgUrl: ['/preset/other/use-instruction/userManage_05.jpg']
+        },{
+          text: '3、点击“执行分享”按钮，在微信好友列表中选择要分享的对象。',
+          imgUrl: ['/preset/other/use-instruction/userManage_06.jpg']
+        },{
+          text: '4、好友收到分享，点击进入，接着填写必要的信息即可。',
+          imgUrl: ['/preset/other/use-instruction/userManage_07.jpg', '/preset/other/use-instruction/userManage_08.jpg']
+        },{
+          text: '5、好友成功进入分享的系统。',
+          imgUrl: ['/preset/other/use-instruction/userManage_09.jpg']
         }
       ]
     }
