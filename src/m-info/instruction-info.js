@@ -210,6 +210,137 @@ const info = [{
       ]
     }
   ]
+},{
+  id: '7',
+  title: '推送设置',
+  children: [{
+      id: '0',
+      title: '进入推送设置',
+      content: [
+        {
+          text: '1、进入系统后，点击“推送设置”图标，进入推送设置界面。',
+          imgUrl: ['/preset/other/use-instruction/pushSetting_01.jpg']
+        }
+      ]
+    },{
+      id: '1',
+      title: '微信绑定',
+      isIndent: true,
+      content: [
+        {
+          text: '1、点击“绑定到当前微信”绑定微信。',
+          imgUrl: ['/preset/other/use-instruction/pushSetting_02.jpg']
+        },{
+          text: '2、点击“解除用户微信绑定”解除绑定微信。',
+          imgUrl: ['/preset/other/use-instruction/pushSetting_03.jpg']
+        }
+      ]
+    }
+  ]
+},{
+  id: '8',
+  title: '物联配置',
+  children: [{
+      id: '0',
+      title: '进入物联配置',
+      content: [
+        {
+          text: '1、进入系统后，点击“物联配置”图标，进入物联配置界面。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_01.jpg']
+        }
+      ]
+    },{
+      id: '1',
+      title: '添加向导文件夹',
+      isIndent: true,
+      content: [
+        {
+          text: '1、点击图中的添加图标。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_02.jpg']
+        },{
+          text: '2、填写相对文件夹名称，点击“下一步”。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_03.jpg']
+        },{
+          text: '3、选择要添加到的节点，点击“完成”。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_04.jpg']
+        }
+      ]
+    },{
+      id: '2',
+      title: '操作向导文件夹',
+      isIndent: true,
+      content: [
+        {
+          text: '1、选择要操作的向导文件夹。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_05.jpg']
+        },{
+          text: '2、删除：点击“设置”的下拉框中的“删除”完成删除。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_06.jpg']
+        },{
+          text: '3、编辑：点击“设置”的下拉框中的“编辑”，修改完成后点击“√”。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_11.jpg', '/preset/other/use-instruction/thingsSetting_12.jpg']
+        }
+      ]
+    },{
+      id: '3',
+      title: '用户授权',
+      isIndent: true,
+      content: [
+        {
+          text: '1、点击要授权的物。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_07.jpg']
+        },{
+          text: '2、点击“授权给客户”。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_08.jpg']
+        },{
+          text: '3、点击“创建物联授权码”。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_09.jpg']
+        },{
+          text: '4、生成授权码，提供扫码。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_10.jpg']
+        }
+      ]
+    },{
+      id: '4',
+      title: '操作物',
+      isIndent: true,
+      content: [
+        {
+          text: '1、选择要操作的物，接着点击设置。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_07.jpg', '/preset/other/use-instruction/thingsSetting_12.jpg']
+        },{
+          text: '2、编辑节点：点击“设置”的下拉框中的“编辑节点”，修改完成后点击“√”。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_14.jpg']
+        },{
+          text: '3、修改名称和描述：点击“设置”的下拉框中的“修改名称和描述”，修改完成后点击“√”。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_15.jpg']
+        },{
+          text: '4、删除：点击“设置”的下拉框中的“删除”，点击“确定”。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_16.jpg']
+        },{
+          text: '5、分离：点击“设置”的下拉框中的“分离”，点击“确定”。',
+          imgUrl: ['/preset/other/use-instruction/thingsSetting_17.jpg']
+        }
+      ]
+    }
+  ]
+},{
+  id: '9',
+  title: '系统配置',
+  children: [{
+      id: '0',
+      title: '系统配置',
+      content: [
+        {
+          text: '1、进入系统后，点击“推送设置”图标，进入系统配置界面。',
+          imgUrl: ['/preset/other/use-instruction/systemSetting_01.jpg']
+        },{
+          text: '2、进入“系统配置”后，可以点击“系统名”、“系统描述”、“系统Logo”、“系统封面”、“管理员超级权限”、“系统密钥”修改配置。',
+          imgUrl: ['/preset/other/use-instruction/systemSetting_02.jpg']
+        }
+      ]
+    }
+  ]
 }]
 
 export default{
